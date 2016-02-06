@@ -1,4 +1,4 @@
-# cirilla
+# Cirilla
 
 Cirilla simplify your frontend work!
 

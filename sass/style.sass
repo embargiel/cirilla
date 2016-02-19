@@ -1,8 +1,51 @@
-.button
-	height: 36px
-	border: 1px solid #666666
-	color: #666666
-	&:hover
-		border: 1px solid purple
-		color: purple
+@import 'variables'
 
+.body
+  font-family: $font
+  background-color: $gray4
+.navbar
+  color: white
+  background-color: $gray1
+  .logo-container
+    top: 7px
+    .logo
+      height: 30px
+  .account
+    position: absolute
+    top: 0 
+    right: 0
+    height: 100%
+    .circle 
+      border-radius: 50%
+      width: 25px
+      height: 25px
+      margin: 0px 10px
+      vertical-align: middle
+
+  .navigation
+    background-color: $blue1
+    .link
+      padding: 10px 20px
+      &:hover
+        background-color: $gray1
+
+  .search
+    background-color: $blue2
+    .actions-container
+      top: 40px
+      left: 0
+      height: 25vh
+      background-color: $gray3
+    .action-bar
+      text-indent: 30px
+      border: 0
+      border-radius: 50px
+    .action-bar:focus + .actions-container
+      display: block !important
+    .icon-container
+      top: 8px
+      left: 3px
+      width: 29px
+      height: 29px
+      border-radius: 50%
+      background-color: $blue1  

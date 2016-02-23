@@ -1,6 +1,7 @@
-@import 'fonts'
-@import 'margins_paddings'
-@import 'text_transform'
+@import 'cirilla_common/fonts'
+@import 'cirilla_common/margins_paddings'
+@import 'cirilla_common/text_transform'
+@import 'cirilla_common/grid'
 
 body
   margin: 0
@@ -24,7 +25,7 @@ a
 i
   display: block
 
-.middle_text
+.middle-text
   transform: translateY(-50%)
   top: 50%
   position: relative
@@ -39,9 +40,9 @@ i
   display: none !important
 .inline
   display: inline-block
-.f_left
+.f-left
   float: left
-.f_right
+.f-right
   float: right
 .radius
   border-radius: 4px
@@ -108,15 +109,22 @@ i
 //
 
 .container
-  margin-right: auto
-  margin-left: auto
-  padding-left: 15px
-  padding-right: 15px
-  max-width: 1170px
+  margin-left: 15px
+  margin-right: 15px
+  @media (min-width: 768px)
+    margin-left: auto
+    margin-right: auto
+    max-width: 750px
+  @media (min-width: 992px)
+    max-width: 966px
+  @media (min-width: 1200px)
+    max-width: 1170px
+
 .automargin
   margin: 0 auto
 .maxwidth
   width: 100% !important
+
 //
 //flexboxex
 //
@@ -138,7 +146,7 @@ i
   flex-wrap: wrap
 .nowrap
   flex-wrap: nowrap
-.box_flex
+.box-flex
   flex: 1
 
 //
@@ -150,6 +158,7 @@ i
 textarea, input
   -webkit-appearance: none
   appearance: none
+  outline: none
 textarea
   resize: none
 input[type="date"]::-webkit-inner-spin-button

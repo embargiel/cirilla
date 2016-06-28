@@ -1,82 +1,8 @@
-@import 'variables' 
+.button
+  height: 36px
+  border: 1px solid #666666
+  color: #666666
+  &:hover
+    border: 1px solid purple
+    color: purple
 
-.body
-  background-color: $gray4
-  font-family: $font
-.navbar
-  color: white
-  background-color: $gray1
-  z-index: 99
-  .logo-container
-    top: 7px
-    .logo
-      height: 30px
-  .account
-    position: absolute
-    top: 0 
-    right: 0
-    height: 100%
-    .circle 
-      border-radius: 50%
-      width: 25px
-      height: 25px
-      margin: 0 10px
-      vertical-align: middle
-
-  .navigation
-    background-color: $blue1
-    .menu-link
-      position: relative
-      display: inline-block
-      padding: 10px 20px
-      cursor: pointer
-      font-size: 14px
-      &:hover 
-        &:before
-          content: ''
-          position: absolute
-          bottom: -5px
-          width: 100%
-          left: 0
-          height: 5px
-          background-color: $blue2
-    .active
-      background-color: $gray1
-  .search
-    background-color: $blue2
-    .actions-container      
-      top: 22px
-      left: 0
-      height: 35vh
-      background-color: $white
-      box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75)
-      border-bottom-left-radius: 20px
-      border-bottom-right-radius: 20px
-      .legend
-        bottom: 0
-        width: 100%        
-        color: $gray2
-        .legend-data
-          border-top: 1px solid $gray2
-          margin: 0 15px
-    .action-bar      
-      text-indent: 30px
-      border: 0
-      border-radius: 50px
-      z-index: 1
-    .action-bar:focus + .actions-container
-      display: block !important      
-    .search-circle
-      top: 8px
-      left: 3px
-      width: 29px
-      height: 29px
-      z-index: 2
-      border-radius: 50%
-      background-color: $blue1  
-    .search-circle-remove
-      right: 35px
-      left: inherit
-    .search-circle-clear
-      right: 3px
-      left: inherit

@@ -84,18 +84,7 @@ i
 .mobile-hidden
   @media (max-width: 991px)
     display: none !important
-.block-sm
-  @media (max-width: 767px)
-    display: block !important
-.maxwidth-sm
-  @media (max-width: 767px)
-    width: 100% !important
-.block-md
-  @media (max-width: 1199px)
-    display: block !important
-.maxwidth-md
-  @media (max-width: 1199px)
-    width: 100% !important
+
 //
 //colors
 //
@@ -150,11 +139,9 @@ i
   display: -webkit-flex
   display: flex
 .m-flex
-  margin: 0 10px
-  &:nth-last-child(1)
+  margin-right: 20px
+  &:last-child(1)
     margin-right: 0
-  &:nth-child(1)
-    margin-left: 0
 .wrap
   flex-wrap: wrap
 .nowrap
@@ -164,13 +151,6 @@ i
 .flex-mobile-block
   @media (max-width: 1199px)
     display: block !important
-.flex-mobile-element
-  @media (max-width: 1199px)
-    display: inline-block !important
-    margin-top: 20px
-    margin-left: 0
-    margin-right: 20px
-    width: auto !important
 
 //
 //forms

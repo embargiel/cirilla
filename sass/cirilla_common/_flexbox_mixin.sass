@@ -1,0 +1,68 @@
+@mixin display-flex()
+  display: flex
+
+@mixin display-inline-flex()
+  display: inline-flex
+
+/* Flex direction */
+@mixin flex-direction($direction: row)
+  @if not index((row, row-reverse, column, column-reverse, inherit), $direction)
+    $direction: row
+  flex-direction: unquote($direction)
+
+/* Flex wrap */
+@mixin flex-wrap($wrap: nowrap)
+  @if not index((nowrap, wrap, wrap-reverse, inherit), $wrap)
+    $wrap: nowrap
+  flex-wrap: unquote($wrap)
+
+/* Flex flow */
+@mixin flex-flow($direction, $wrap)
+  @include flex-direction($direction)
+  @include flex-wrap($wrap)
+
+/* Order */
+@mixin order($order: 0)
+  order: $order
+
+/* Flex grow */
+@mixin flex-grow($grow: 0)
+  flex-grow: $grow
+
+/* Flex shrink */
+@mixin flex-shrink($shrink: 1)
+  flex-shrink: $shrink
+
+/* Flex basis */
+@mixin flex-basis($basis: auto)
+  flex-basis: $basis
+
+/* Flex */
+@mixin flex($grow: 0, $shrink: 1, $basis: auto)
+  @include flex-grow($grow)
+  @include flex-shrink($shrink)
+  @include flex-basis($basis)
+
+/* ustify content */
+@mixin justify-content($justify: flex-start)
+  @if not index((flex-start, flex-end, center, space-between, space-around, inherit), $justify)
+    $justify: flex-start
+  justify-content: unquote($justify)
+
+/* Align items */
+@mixin align-items($align: stretch)
+  @if not index((flex-start, flex-end, center, baseline, stretch, inherit), $align)
+    $align: stretch
+  align-items: unquote($align)
+
+/* Align self */
+@mixin align-self($align: auto)
+  @if not index((auto, flex-start, flex-end, center, baseline, stretch, inherit), $align)
+    $align: auto
+  align-self: unquote($align)
+
+/* Align content */
+@mixin align-content($align: stretch)
+  @if not index((flex-start, flex-end, center, space-between, space-around, stretch, inherit), $align)
+    $align: stretch
+  align-content: unquote($align)

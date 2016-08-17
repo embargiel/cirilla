@@ -2,6 +2,7 @@
 @import 'cirilla_common/margins_paddings'
 @import 'cirilla_common/text_transform'
 @import 'cirilla_common/grid'
+@import 'cirilla_common/flexbox'
 
 body
   margin: 0
@@ -105,9 +106,11 @@ i
 //
 
 .container
-  margin-left: auto
-  margin-right: auto
+  margin-left: 15px
+  margin-right: 15px
   @media (min-width: 768px)
+    margin-left: auto
+    margin-right: auto
     width: 750px
   @media (min-width: 992px)
     width: 966px
@@ -126,31 +129,6 @@ i
   width: inherit !important
 .initialwidth
   width: auto !important
-
-//
-//flexboxex
-//
-
-.flex
-  display: -webkit-box
-  display: -moz-box
-  display: box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
-.m-flex
-  margin-right: 20px
-  &:last-child(1)
-    margin-right: 0
-.wrap
-  flex-wrap: wrap
-.nowrap
-  flex-wrap: nowrap
-.box-flex
-  flex: 1
-.flex-mobile-block
-  @media (max-width: 1199px)
-    display: block !important
 
 //
 //forms

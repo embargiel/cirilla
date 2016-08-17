@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79125e9f-211c-4721-a175-2e5478090e29" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/cirilla.sass" afterPath="$PROJECT_DIR$/sass/cirilla.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/cirilla_common/_grid.sass" afterPath="$PROJECT_DIR$/sass/cirilla_common/_grid.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/cirilla_common/_text_transform.sass" afterPath="$PROJECT_DIR$/sass/cirilla_common/_text_transform.sass" />
-    </list>
+    <list default="true" id="79125e9f-211c-4721-a175-2e5478090e29" name="Default" comment="" />
     <ignored path="cirilla.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -222,12 +218,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469710685768</updated>
-      <workItem from="1469710687134" duration="278000" />
+      <workItem from="1469710687134" duration="874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278000" />
+    <option name="totallyTimeSpent" value="874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="2690" height="1513" extended-state="6" />

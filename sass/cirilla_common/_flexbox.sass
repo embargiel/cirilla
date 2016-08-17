@@ -1,0 +1,77 @@
+@import 'flexbox_mixin'
+
+
+.display-flex, .flex
+  @include display-flex()
+
+.display-inline-flex
+  @include display-inline-flex()
+
+/* Flex Direction */
+$flex-direction-list: 'row', 'row-reverse', 'column', 'column-reverse', 'inherit'
+@each $direction in $flex-direction-list
+  $i: index($flex-direction-list, $direction)
+  .flex-direction-#{$direction}
+    @include flex-direction($direction)
+
+/* Flex Wrap */
+$flex-wrap-list: 'nowrap', 'wrap', 'wrap-reverse', 'inherit'
+@each $wrap in $flex-wrap-list
+  $i: index($flex-wrap-list, $wrap)
+  .flex-wrap-#{$wrap}
+    @include flex-wrap($wrap)
+
+/* Flex Order */
+@for $i from -12 through 12
+  .flex-order-#{$i}
+    @include order($i)
+
+/* Flex Grow */
+@for $i from 1 through 12
+  .flex-grow-#{$i}
+    @include flex-grow($i)
+
+/* Flex Shrink */
+@for $i from 1 through 12
+  .flex-shrink-#{$i}
+    @include flex-shrink($i)
+
+/* Flex Justify Content */
+$justify-content-list: 'flex-start', 'flex-end', 'center', 'inherit'
+@each $justify-content in $justify-content-list
+  $i: index($justify-content-list, $justify-content)
+  .justify-content-#{$justify-content}
+    @include justify-content($justify-content)
+
+/* Flex Align Items */
+$align-items-list: 'flex-start', 'flex-end', 'center', 'baseline', 'stretch', 'inherit'
+@each $align in $align-items-list
+  $i: index($align-items-list, $align)
+  .align-items-#{$align}
+    @include align-items($align)
+
+/* Flex Align Self */
+$align-self-list: 'auto', 'flex-start', 'flex-end', 'center', 'baseline', 'stretch', 'inherit'
+@each $align in $align-self-list
+  $i: index($align-self-list, $align)
+  .align-self-#{$align}
+    @include align-self($align)
+
+/* Flex Align Content */
+$align-content-list: 'flex-start', 'flex-end', 'center', 'space-between' 'space-around', 'stretch', 'inherit'
+@each $align in $align-content-list
+  $i: index($align-content-list, $align)
+  .align-content-#{$align}
+    @include align-content($align)
+
+.m-flex
+  margin-right: 20px
+  &:last-child(1)
+    margin-right: 0
+
+/* Flexbox deprecated clases */
+
+.wrap
+  flex-wrap: wrap
+.nowrap
+  flex-wrap: nowrap

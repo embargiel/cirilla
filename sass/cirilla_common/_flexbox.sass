@@ -37,7 +37,7 @@ $flex-wrap-list: 'nowrap', 'wrap', 'wrap-reverse', 'inherit'
     @include flex-shrink($i)
 
 /* Flex Justify Content */
-$justify-content-list: 'flex-start', 'flex-end', 'center', 'inherit'
+$justify-content-list: 'flex-start', 'flex-end', 'space-between', 'space-around', 'center', 'inherit'
 @each $justify-content in $justify-content-list
   $i: index($justify-content-list, $justify-content)
   .justify-content-#{$justify-content}

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
-  s.name        = 'Cirilla'
-  s.version     = '1.0.4'
+  s.name        = 'cirilla'
+  s.version     = '1.0.5'
   s.date        = '2017-02-27'
   s.summary     = "Cirilla"
   s.description = "Cirilla simplify your frontend work!"

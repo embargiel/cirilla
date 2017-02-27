@@ -2,7 +2,7 @@
   "name": "cirilla",
   "description": "Lightweight CSS/SASS framework",
   "author": "Marcin Bargiel <marcin.k.bargiel@gmail.com>" ,
-  "version": "1.0.3",
-  "main": "stylesheets/cirilla.css",
+  "version": "1.0.4",
+  "main": "lib/cirilla.css",
   "license": "MIT license"
 }
